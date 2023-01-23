@@ -20,16 +20,18 @@ $menu = htmlspecialchars(filter_input(INPUT_GET, "menu"));
         <?php require_once './layout/head.php'; ?>
     </head>
     <body>
-        <?php
-        if ($login) {
-            //-- védett oldal megjeleníthető -------
-            //-- sikeresen belépett ----------------
-            require_once './layout/menu.php';
-            require_once './tartalom.php';
-        } else {
-            //-- csak belépési lehetőség -----------
-            include_once './pages/login.php';
-        }
-        ?>
+        <div class="container min-vh-100">
+            <?php
+            if ($login) {
+                //-- védett oldal megjeleníthető -------
+                //-- sikeresen belépett ----------------
+                require_once './layout/menu.php';
+                require_once './tartalom.php';
+            } else {
+                //-- csak belépési lehetőség -----------
+                include_once './pages/login.php';
+            }
+            ?>
+        </div>
     </body>
 </html>

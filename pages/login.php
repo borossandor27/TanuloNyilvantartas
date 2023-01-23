@@ -16,18 +16,20 @@ if (filter_input(INPUT_POST, "login", FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FA
     //$_SESSION['login'] = ;
 }
 ?>
-<div class="container">
-    <h1>Belépés</h1>
-    <form method="POST" class="  col-6">
-        <div class="form-group justify-content-center">
-            <input type="text" name="username" placeholder="felhasználó név"  class="form-control">
-        </div>
-        <div class="form-group">
-            <input type="password" name="password" placeholder="jelszó" class="form-control">
-        </div>
-        <div class="form-group">
-            <button name="login" value="true"  class="btn btn-success">Belépés</button>
-        </div>
+<div class="d-flex align-items-center justify-content-center m-3">
+    <form method="POST" class="col-sm-10 col-md-3">
+        <fieldset class="p-4">
+            <legend>Belépés</legend>
+            <div class="form-group m-3">
+                <input type="text" name="username" placeholder="felhasználó név"  class="form-control">
+            </div>
+            <div class="form-group m-3">
+                <input type="password" name="password" placeholder="jelszó" class="form-control">
+            </div>
+            <div class="form-group m-3">
+                <button name="login" value="true"  class="btn btn-success">Belépés</button>
+            </div>
+        </fieldset>
     </form>
 </div>
 <?php

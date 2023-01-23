@@ -1,3 +1,9 @@
 .active {
     background-color: lightgray;
 }
+* html body {
+    min-height: 100vh;
+}
+fieldset {
+    border: 1px silver solid;
+}
