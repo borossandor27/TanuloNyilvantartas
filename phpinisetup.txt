@@ -1,0 +1,5 @@
+file_uploads=On
+upload_tmp_dir="D:\xampp\tmp" //-- jogosultság?
+upload_max_filesize=40M
+post_max_size=40M
+

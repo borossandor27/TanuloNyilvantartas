@@ -23,8 +23,8 @@ $menu = htmlspecialchars(filter_input(INPUT_GET, "menu"));
         <div class="container min-vh-100">
             <?php
             if ($login) {
-                //-- védett oldal megjeleníthető -------
                 //-- sikeresen belépett ----------------
+                //-- védett oldal megjeleníthető -------
                 require_once './layout/menu.php';
                 require_once './tartalom.php';
             } else {

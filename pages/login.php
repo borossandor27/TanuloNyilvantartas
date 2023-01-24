@@ -1,7 +1,6 @@
 <?php
 if (filter_input(INPUT_POST, "login", FILTER_VALIDATE_BOOLEAN, FILTER_NULL_ON_FAILURE)) {
     //-- a belépési adatok ellenőrzése ---------------
-    echo 'Adatok ellenőrzése';
     $username = htmlspecialchars(filter_input(INPUT_POST, "username"));
     $password = filter_input(INPUT_POST, "password");
     if ($db->validUser($username, $password)) {
